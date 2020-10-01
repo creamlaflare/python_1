@@ -1,0 +1,5 @@
+name = str(input('Какое у вас имя? '))
+surname = str(input('Какая ваша фамилия? '))
+print(f'Здравствуйте, {name} {surname}')
+age = int(input('Сколько вам лет? '))
+print('Вы родились в ', 2020 - age)
