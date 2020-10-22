@@ -11,7 +11,7 @@ class Cell:
     def __mul__(self, other):
         print(f'Число ячеек общей клетки {self.quant * other.quant}')
     def __truediv__(self, other):
-        print(f'Число ячеек общей клетки {self.quant / other.quant}')
+        print(f'Число ячеек общей клетки {self.quant // other.quant}')
     def make_order(self, num):
         for i in range(self.quant):
             if ((i % (num)) == 0) and (i != 0):
@@ -19,4 +19,9 @@ class Cell:
             else:
                 print('*', end='')
 cell1 = Cell(15)
+cell2 = Cell(28)
+cell1 + cell2
+cell2 - cell1
+cell2 / cell1
+cell1 * cell2
 cell1.make_order(8)
